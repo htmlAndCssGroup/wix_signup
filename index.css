@@ -7,48 +7,63 @@ body {
     font-family : "Helvetica Neue";
     font-size   : 18px;
     width       : 100%;
-    height      : 1024px;
+    height      : 662px;
 }
 
 form {
-    
+    width       : 80%;
+    height      : inherit;
+    padding     : 0;
+}
+
+button {
+    display     : block;
+    width       : 247px;
+    margin      : -10px 20px -20px 20px;
+    height      : 48px;
+    border      : none;
+    cursor      : pointer;
+    position    : relative;
+    left        : 52px;
+    z-index     : 1;
+    font-size   : 0.85em;
+    background-color : white;
 }
 
 .container {
-    background-color : red;
+    //background-color : red;
     width       : 70%;
     position    : absolute;
     top         : 20%;
-    left        : 20%;
-    
+    left        : 15%;
 }
 
 .signup {
-    background-color : blue;
-    width            : 50%;
-    height           : 300px;
-    overflow         : hidden;
+    //background-color : blue;
+    width            : 45%;
+    height           : 343px;
+    float            : left;
 }
 
 .input {
-    width   : 70%;
-    height  : 20px;
+    width   : 90%;
+    height  : 24px;
     display : block;
     padding : 10px;
+    margin  : 0;
     border  : none;
     font-size : 1.1em;
-    border-bottom : 1px solid gray;
-    transition : .3s;
+    border-bottom : 1px solid #E1E1E1;
+    /transition : .3s ease-in-out;
 }
 
 .input:hover {
     border-bottom-color : black;
 }
 
+
 .input:focus {
     transition : 1.5s;
-    position : relative;
-    top      : 0px;
 }
 
 .label {
@@ -59,11 +74,61 @@ form {
     transform      : translateY(20px);
 }
 
+.other_ways {
+    //background-color : yellow;
+    width            : 50%;
+    height           : 200px;
+    float            : left;
+    position         : relative;
+    top              : 86px;
+}
+
+.buttons {
+    //background-color : pink;
+    width   : 70%;
+    height  : inherit;
+    margin  : 0 auto;
+}
+
+.icn-blue {
+    width       : 52px;
+    height      : 48px;
+    position    : relative;
+    top         : 38px;
+    left        : 20px;
+    z-index     : 2;
+    background-color : #3b5998;
+}
+
+.icn-red {
+    width       : 52px;
+    height      : 48px;
+    position    : relative;
+    top         : 38px;
+    left        : 20px;
+    z-index     : 2;
+    background-color : #d34836;
+}
+
+.icono-facebook {
+    position : relative;
+    top      : 6px;
+    left     : 8px;
+}
+
+.icono-gplus {
+    position : relative;
+    top      : 8px;
+    left     : 10px;
+}
+
 #submit {
     width   : 160px;
-    height  : 40px;
+    height  : 45px;
     border  : 1px solid #3899ec;
     color   : #3899ec;
+    cursor  : pointer;
+    margin-top : 20px;
     font-size : 0.9em;
     border-radius : 20px;
     background-color : white;
@@ -73,4 +138,29 @@ form {
 #submit:hover {
     background-color : #3899ec;
     color   : white;
+}
+
+#divider {
+    background-color : darkgray;
+    width            : 1px;
+    height           : 343px;
+    float            : left;
+}
+
+#facebook {
+    border  : 1px solid #3b5998;
+    color   : #3b5998;
+}
+
+#facebook:hover {
+    background-color : #EBEFF5;
+}
+
+#google {
+    border  : 1px solid #d34836;
+    color   : #d34836;
+}
+
+#google:hover {
+    background-color : #FBEDEB;
 }
