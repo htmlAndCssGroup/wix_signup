@@ -79,7 +79,6 @@ button {
     top      : 30px;
     pointer-events : none;
     transition     : .5s ease-in-out;
-    transform      : translateY(10px);
 }
 
 .other_ways {
@@ -133,6 +132,12 @@ button {
 .id:focus + #id, .id-confirm:focus + #id-confirm,
 .pw:focus + #pw, .pw-confirm:focus + #pw-confirm {
     width   : 380px;
+}
+
+.active {
+    position    : relative;
+    top         : 10px;
+    font-size   : 0.7em;
 }
 
 #submit {

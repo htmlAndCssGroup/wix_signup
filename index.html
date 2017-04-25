@@ -4,21 +4,49 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="stylesheet" href="http://icono-49d6.kxcdn.com/icono.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".id").focus(function(){
+                    $(".label-id").addClass("active");
+                }).blur(function(){
+                    $(".label-id").removeClass("active");
+                });
+                
+                $(".id-confirm").focus(function(){
+                    $(".label-id-confirm").addClass("active");
+                }).blur(function(){
+                    $(".label-id-confirm").removeClass("active");
+                });
+                
+                $(".pw").focus(function(){
+                    $(".label-pw").addClass("active");
+                }).blur(function(){
+                    $(".label-pw").removeClass("active");
+                });
+                
+                $(".pw-confirm").focus(function(){
+                    $(".label-pw-confirm").addClass("active");
+                }).blur(function(){
+                    $(".label-pw-confirm").removeClass("active");
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="container">
             <div class="signup">
                 <form>
-                    <label for="id" class="label label-id">이메일</label>
+                    <label class="label label-id">이메일</label>
                     <input class="input id" type="text"/>
                     <div id="id"></div>
-                    <label for="id-confirm" class="label id-confirm">이메일 확인</label>
+                    <label class="label label-id-confirm">이메일 확인</label>
                     <input class="input id-confirm" type="text"/>
                     <div id="id-confirm"></div>
-                    <label for="pw" class="label">비밀번호</label>
+                    <label class="label label-pw">비밀번호</label>
                     <input class="input pw" type="text"/>
                     <div id="pw"></div>
-                    <label for="pw-confirm" class="label">비밀번호 확인</label>
+                    <label class="label label-pw-confirm">비밀번호 확인</label>
                     <input class="input pw-confirm" type="text"/>
                     <div id="pw-confirm"></div>
                     <input id="submit" type="submit" value="가입하기"/>
