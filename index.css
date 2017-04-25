@@ -3,6 +3,10 @@
     margin  : 0;
 }
 
+::-webkit-scrollbar {
+    display : none;
+}
+
 body {
     font-family : "Helvetica Neue";
     font-size   : 18px;
@@ -36,15 +40,15 @@ button {
 
 .container {
     //background-color : red;
-    width       : 70%;
+    width       : 1200px;
     position    : absolute;
     top         : 20%;
-    left        : 15%;
+    left        : 12%;
 }
 
 .signup {
     //background-color : blue;
-    width            : 45%;
+    width            : 500px;
     height           : 343px;
     float            : left;
 }
@@ -74,13 +78,13 @@ button {
     position : relative;
     top      : 30px;
     pointer-events : none;
-    transition     : .5s;
-    transform      : translateY(20px);
+    transition     : .5s ease-in-out;
+    transform      : translateY(10px);
 }
 
 .other_ways {
     //background-color : yellow;
-    width            : 50%;
+    width            : 600px;
     height           : 200px;
     float            : left;
     position         : relative;
@@ -128,7 +132,7 @@ button {
 
 .id:focus + #id, .id-confirm:focus + #id-confirm,
 .pw:focus + #pw, .pw-confirm:focus + #pw-confirm {
-    width   : 96%;
+    width   : 380px;
 }
 
 #submit {
