@@ -16,6 +16,10 @@ form {
     padding     : 0;
 }
 
+form div {
+    width       : inherit;
+}
+
 button {
     display     : block;
     width       : 247px;
@@ -54,7 +58,7 @@ button {
     border  : none;
     font-size : 1.1em;
     border-bottom : 1px solid #E1E1E1;
-    /transition : .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .input:hover {
@@ -63,7 +67,7 @@ button {
 
 
 .input:focus {
-    transition : 1.5s;
+    outline : none;
 }
 
 .label {
@@ -122,6 +126,11 @@ button {
     left     : 10px;
 }
 
+.id:focus + #id, .id-confirm:focus + #id-confirm,
+.pw:focus + #pw, .pw-confirm:focus + #pw-confirm {
+    width   : 96%;
+}
+
 #submit {
     width   : 160px;
     height  : 45px;
@@ -163,4 +172,13 @@ button {
 
 #google:hover {
     background-color : #FBEDEB;
+}
+
+#id, #id-confirm, #pw, #pw-confirm {
+    width   : 0%;
+    height  : 2px;
+    position: relative;
+    top     : -1px;
+    transition : .5s ease;
+    background-color : red; 
 }
